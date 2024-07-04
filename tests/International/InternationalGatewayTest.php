@@ -27,7 +27,7 @@ class InternationalGatewayTest extends GatewayTestCase
      */
     protected $gateway;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->gateway = Omnipay::create('OnePay_International', $this->getHttpClient(), $this->getHttpRequest());
         $this->gateway->setVpcAccessCode('6BEB2546');
