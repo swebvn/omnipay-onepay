@@ -27,7 +27,7 @@ class DomesticGatewayTest extends GatewayTestCase
      */
     protected $gateway;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->gateway = Omnipay::create('OnePay_Domestic', $this->getHttpClient(), $this->getHttpRequest());
         $this->gateway->setVpcAccessCode('D67342C2');
