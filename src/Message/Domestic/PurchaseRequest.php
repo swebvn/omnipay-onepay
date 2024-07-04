@@ -16,7 +16,7 @@ use Omnipay\OnePay\Message\AbstractPurchaseRequest;
  */
 class PurchaseRequest extends AbstractPurchaseRequest
 {
-    protected $testEndpoint = 'https://mtf.onepay.vn/onecomm-pay/vpc.op';
+    protected $testEndpoint = 'https://mtf.onepay.vn/paygate/vpcpay.op';
 
-    protected $productionEndpoint = 'https://onepay.vn/onecomm-pay/vpc.op';
+    protected $productionEndpoint = 'https://onepay.vn/paygate/vpcpay.op';
 }
