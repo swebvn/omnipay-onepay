@@ -22,7 +22,7 @@ use Omnipay\OnePay\Message\PurchaseResponse;
 class GatewayTest extends GatewayTestCase
 {
     /**
-     * @var \Omnipay\OnePay\OnePayGateway
+     * @var \Omnipay\OnePay\Gateway
      */
     protected $gateway;
 

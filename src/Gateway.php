@@ -16,7 +16,7 @@ use Omnipay\OnePay\Message\IncomingRequest;
  * @author Vuong Minh <vuongxuongminh@gmail.com>
  * @since 1.0.0
  */
-class OnePayGateway extends AbstractGateway
+class Gateway extends AbstractGateway
 {
     /**
      * {@inheritdoc}
