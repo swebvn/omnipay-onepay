@@ -285,6 +285,16 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
         return $this->setParameter('vpc_Currency', $value);
     }
 
+    public function setVpcCardList($value)
+    {
+        return $this->setParameter('vpc_CardList', $value);
+    }
+
+    public function getVpcCardList()
+    {
+        return $this->getParameter('vpc_CardList');
+    }
+
     /**
      * Trả về số điện thoại khách hàng.
      *
@@ -395,7 +405,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     {
         $parameters = [
             'vpc_Version', 'vpc_Currency', 'vpc_Command', 'vpc_AccessCode', 'vpc_Merchant', 'vpc_Locale',
-            'vpc_ReturnURL', 'vpc_MerchTxnRef', 'vpc_OrderInfo', 'vpc_Amount', 'vpc_TicketNo',
+            'vpc_ReturnURL', 'vpc_MerchTxnRef', 'vpc_OrderInfo', 'vpc_Amount', 'vpc_TicketNo', 'vpc_CardList'
         ];
 
         if ($this->getVpcCustomerId()) {
