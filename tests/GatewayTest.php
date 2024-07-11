@@ -6,7 +6,7 @@
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
 
-namespace Omnipay\OnePay\Tests\Domestic;
+namespace Omnipay\OnePay\Tests;
 
 use Omnipay\Common\Exception\InvalidRequestException;
 use Omnipay\Common\Exception\InvalidResponseException;
@@ -14,22 +14,21 @@ use Omnipay\Common\Message\RedirectResponseInterface;
 use Omnipay\Omnipay;
 use Omnipay\OnePay\Message\IncomingResponse;
 use Omnipay\OnePay\Message\PurchaseResponse;
-use Omnipay\OnePay\Tests\GatewayTestCase;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
  * @since 1.0.0
  */
-class DomesticGatewayTest extends GatewayTestCase
+class GatewayTest extends GatewayTestCase
 {
     /**
-     * @var \Omnipay\OnePay\DomesticGateway
+     * @var \Omnipay\OnePay\OnePayGateway
      */
     protected $gateway;
 
     protected function setUp(): void
     {
-        $this->gateway = Omnipay::create('OnePay_Domestic', $this->getHttpClient(), $this->getHttpRequest());
+        $this->gateway = Omnipay::create('OnePay', $this->getHttpClient(), $this->getHttpRequest());
         $this->gateway->setVpcAccessCode('D67342C2');
         $this->gateway->setVpcUser('op01');
         $this->gateway->setVpcPassword('op123456');

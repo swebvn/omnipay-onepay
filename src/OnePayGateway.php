@@ -1,6 +1,6 @@
 <?php
 /**
- * @link https://github.com/phpviet/omnipay-onepay
+ * @link https://github.com/phpviet/laravel-onepay
  *
  * @copyright (c) PHP Viet
  * @license [MIT](https://opensource.org/licenses/MIT)
@@ -8,22 +8,22 @@
 
 namespace Omnipay\OnePay;
 
+use Omnipay\OnePay\Message\Request\PurchaseRequest;
+use Omnipay\OnePay\Message\Request\QueryTransactionRequest;
 use Omnipay\OnePay\Message\IncomingRequest;
-use Omnipay\OnePay\Message\International\PurchaseRequest;
-use Omnipay\OnePay\Message\International\QueryTransactionRequest;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
  * @since 1.0.0
  */
-class InternationalGateway extends AbstractGateway
+class OnePayGateway extends AbstractGateway
 {
     /**
      * {@inheritdoc}
      */
     public function getName(): string
     {
-        return 'OnePay International';
+        return 'OnePay';
     }
 
     /**

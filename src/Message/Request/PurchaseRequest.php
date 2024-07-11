@@ -6,7 +6,7 @@
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
 
-namespace Omnipay\OnePay\Message\Domestic;
+namespace Omnipay\OnePay\Message\Request;
 
 use Omnipay\OnePay\Message\AbstractPurchaseRequest;
 

@@ -1,4 +1,4 @@
-Domestic Gateway
+Request Gateway
 -------------------
 
 ### Khởi tạo gateway:

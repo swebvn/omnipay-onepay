@@ -37,6 +37,9 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
         $this->setVpcLocale(
             $this->getVpcLocale() ?? 'vn'
         );
+        $this->setVpcCardList(
+            $this->getVpcCardList() ?? ''
+        );
 
         return $this;
     }

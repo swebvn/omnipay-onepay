@@ -6,9 +6,9 @@
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
 
-namespace Omnipay\OnePay\Tests\Domestic\Message;
+namespace Omnipay\OnePay\Tests\Message;
 
-use Omnipay\OnePay\Message\Domestic\QueryTransactionRequest;
+use Omnipay\OnePay\Message\Request\QueryTransactionRequest;
 use Omnipay\Tests\TestCase;
 
 /**

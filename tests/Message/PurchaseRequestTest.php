@@ -6,9 +6,9 @@
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
 
-namespace Omnipay\OnePay\Tests\Domestic\Message;
+namespace Omnipay\OnePay\Tests\Message;
 
-use Omnipay\OnePay\Message\Domestic\PurchaseRequest;
+use Omnipay\OnePay\Message\Request\PurchaseRequest;
 use Omnipay\Tests\TestCase;
 
 /**
@@ -48,7 +48,7 @@ class PurchaseRequestTest extends TestCase
         $this->request->setVpcTicketNo(15);
         $this->request->setTestMode(true);
         $data = $this->request->getData();
-        $this->assertEquals(14, count($data));
+        $this->assertEquals(15, count($data));
         $this->assertEquals(1, $data['vpc_Locale']);
         $this->assertEquals(2, $data['vpc_OrderInfo']);
         $this->assertEquals(3, $data['vpc_AccessCode']);

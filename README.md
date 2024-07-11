@@ -40,7 +40,7 @@ hoặc nếu bạn muốn sử dụng không dựa trên framework thì tiếp t
 
 ### Cách sử dụng các gateway
 
-- [`Domestic (nội địa)`](docs/Domestic.md)
+- [`Request (nội địa)`](docs/Domestic.md)
 - [`International (quốc tế)`](docs/International.md)
 
 ## Dành cho nhà phát triển
