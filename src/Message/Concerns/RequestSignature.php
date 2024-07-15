@@ -28,7 +28,11 @@ trait RequestSignature
         );
 
         foreach ($this->getSignatureParameters() as $parameter) {
-            $data[$parameter] = $this->getParameter($parameter);
+            $value = $this->getParameter($parameter);
+            if ($value !== null && $value !== '') {
+                $data[$parameter] = $value;
+            }
+//            $data[$parameter] = $this->getParameter($parameter);
         }
 
         return $signature->generate($data);
